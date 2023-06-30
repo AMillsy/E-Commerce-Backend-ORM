@@ -58,8 +58,26 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", async (req, res) => {
   // update a category by its `id` value
+  const { category_name } = req.body;
+
+  if (!category_name)
+    return res.status(400).json({ message: `No category_name` });
+  try {
+    const udpateCategory = await Category.update(
+      { category_name: category_name },
+      { where: { id: req.params.id } }
+    );
+    if (udpateCategory[0] === 0) {
+      res.status(200).json({ message: `No category updated` });
+      return;
+    }
+
+    res.status(200).json(udpateCategory);
+  } catch (error) {
+    res.status(400).json(error);
+  }
 });
 
 router.delete("/:id", (req, res) => {
