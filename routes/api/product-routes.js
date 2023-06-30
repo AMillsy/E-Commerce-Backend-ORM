@@ -6,7 +6,6 @@ const { Product, Category, Tag, ProductTag } = require("../../models");
 
 // get all products
 
-// NOT FULLY WORKING, WHEN RETURNED THE TAG IS COMING BACK AS NULL, NEEDS FIXING
 router.get("/", async (req, res) => {
   // find all products
   try {
