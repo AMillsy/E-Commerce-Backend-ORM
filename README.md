@@ -97,3 +97,23 @@ Once you have completed the installation, you will be able to run the project an
 ## Usage
 
 ### Get Categories, Products and Tags
+
+Get data back from the database
+
+![Get Response with Postman](./Readme-Images/GetResponse.png)
+
+### Create Category, Product and Tag
+
+![Post Response with Postman](./Readme-Images/PostResponse.png)
+
+### Update Category, Product and Tag
+
+Responds with how many have been udpated.
+
+![Put Response with Postman](./Readme-Images/PutResponse.png)
+
+### Delete Category, Product and Tag
+
+Responds with how many have been deleted from the database.
+
+![Delete Response with Postman](./Readme-Images/DeleteResponse.png)
