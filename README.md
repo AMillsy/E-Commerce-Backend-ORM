@@ -13,7 +13,7 @@ Creating a E-Commerce Backend with the use of ORM's using Sequelize
 
 ## Walkthough
 
-[Walkthrough Video](https://www.youtube.com)
+[Walkthrough Video](https://youtu.be/9kfN7-r2eCE)
 
 ## User Story
 
